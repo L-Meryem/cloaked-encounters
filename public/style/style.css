@@ -1,0 +1,90 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {}
+
+main {
+  border: 2px solid rgb(246, 60, 60);
+  height: 90vh;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  position: relative;
+}
+
+nav {
+  background-color: rgb(83, 212, 255);
+}
+
+aside {
+  flex: 1;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(83, 212, 255, 0.585);
+}
+
+#collections {
+  background-color: rgba(248, 71, 100, 0.928);
+  border-bottom: 2px solid black;
+}
+
+#board {}
+
+#generator{
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  height: 20vh;
+  color: rgb(15, 221, 15);
+  padding: 5px;
+}
+
+#chains {
+  background-color: rgba(234, 244, 45, 0.824);
+  border-bottom: 2px solid black;
+
+}
+
+#community {
+  background-color: rgb(19, 82, 254);
+  border-bottom: 2px solid black;
+
+}
+
+#community label{
+  color: white;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
