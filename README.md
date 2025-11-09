@@ -1,4 +1,4 @@
-<a id="readme-top"></a>
+<a id="top"></a>
 
 ![status](https://img.shields.io/badge/status-early%20development-%23eb426c?style=for-the-badge)
 
@@ -25,20 +25,6 @@ In the future, I hope to add features that will allow a community of users to sh
 - Keep a list of chains ready to roll on the spot during your sessions.  
 - Import tables from various sources such as PDFs, blogs, emails, or subreddits.  
 - Share your tables with the community in just one click.
-
-
-## Stranger in a tavern 
-
-- pick tables
-- connect one to the other in order
-- picture of t1 -> t2 -> t3
-- chain
-- picture of chain
-- Save chain to your collection
-- Any time can roll it
-- approve some, rest rerolls
-- use your results
-
 
 ## Todo
 - [ ] Tables
@@ -77,3 +63,4 @@ In the future, I hope to add features that will allow a community of users to sh
     <img src="https://img.shields.io/badge/⬆%20Back%20to%20Top-555555?style=for-the-badge" alt="back to top"/>
   </a>
 </p>
+
