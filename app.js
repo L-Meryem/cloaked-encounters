@@ -1,4 +1,4 @@
-const connectToMongo = require('./src/config/db');
+const connectToMongo = require('./config/db');
 connectToMongo();
 const express = require('express');
 const app = express();
@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-app.use('/auth', require('./src/routes/auth'));
-app.use('/', require('./src/routes/routes'));
+app.use('/auth', require('./routes/auth'));
+app.use('/', require('./routes/routes'));
 
 const PORT = 8080;
 app.listen(PORT, ()=>console.log(`Server listening on ${PORT}`));

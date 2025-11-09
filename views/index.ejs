@@ -24,49 +24,66 @@
                 </label>
                 <div class="collapsible-body">
                     <ul class="inline">
-                        <li><a href="/signup">Signup</a></li>
+                        <li><label for="modal-2">Login</label></li>
+                        <li><label for="modal-1">Signup</label></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <%- include('partials/signup.ejs') -%>
+            <%- include('partials/login.ejs') -%>
     </header>
     <div class="wrapper">
         <main>
-            <section id="board">board</section>
-            <section id="generator">chains</section>
+            <section id="board">board
+                <h1></h1>
+                
+            </section>
+            <section id="generator">
+                <h1>chains</h1>
+                <button class="btn-small">Reroll</button>
+            </section>
         </main>
         <aside>
             <div class="row">
                 <div class="collapsible" id="collections">
                     <input id="collapsible2" type="checkbox" name="collapsible">
-                    <label for="collapsible2">Collections</label>
-                    <div class="collapsible-body">
-                        <span>Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas,
-                            t-bone sirloin shoulder bresaola...</span>
+                    <label for="collapsible2" class="paper border">Collections</label>
+                    <div class="collapsible-body paper scrollable-body">
+                        <ul class="child-borders">
+                            <li class="border shadow shadow-hover">Table 1</li>
+                            <li class="border shadow shadow-hover">Table 2</li>
+                            <li class="border shadow shadow-hover">Table 3</li>
+                            <li class="border shadow shadow-hover">Table 4</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="collapsible" id="chains">
                     <input id="collapsible3" type="checkbox" name="collapsible">
-                    <label for="collapsible3">Chains</label>
-                    <div class="collapsible-body">
-                        <span>Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas,
-                            t-bone sirloin shoulder bresaola...</span>
+                    <label for="collapsible3" class="paper border">Chains</label>
+                    <div class="collapsible-body scrollable-body">
+                           <ul class="child-borders">
+                             <li class="border shadow shadow-hover">Chain 1</li>
+                            <li class="border shadow shadow-hover">Chain 2</li>
+                            <li class="border shadow shadow-hover">Chain 3</li>
+                        </ul>
                     </div>
                 </div>
 
 
                 <div class="collapsible" id="community">
                     <input id="collapsible4" type="checkbox" name="collapsible">
-                    <label for="collapsible4">Community</label>
-                    <div class="collapsible-body">
-                        <span>Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas,
-                            t-bone sirloin shoulder bresaola...</span>
+                    <label for="collapsible4" class="paper border">Community</label>
+                    <div class="collapsible-body scrollable-body">
+                           <ul class="child-borders">
+                            <li class="border shadow shadow-hover">Table 1</li>
+                            <li class="border shadow shadow-hover">Table 2</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-    </div>
-    </aside>
+        </aside>
     </div>
 
 </body>

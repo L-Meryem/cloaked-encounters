@@ -24,12 +24,12 @@
 body {}
 
 main {
-  border: 2px solid rgb(246, 60, 60);
   height: 90vh;
   flex: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: calc(100vh - 3.5rem);
 }
 
 .wrapper {
@@ -41,24 +41,63 @@ main {
 /*******************************************/
 header {
   position: relative;
+  min-height: 3.5rem;
 }
 
 nav {
   background-color: rgb(83, 212, 255);
+  height: 100%;
 }
 
 aside {
   flex: 1;
   border: 2px solid rgb(0, 0, 0);
   background-color: rgba(83, 212, 255, 0.585);
+  overflow-y: auto;
+  max-height: calc(100vh - 3.5rem);
+  min-width: 10rem;
 }
 
-#collections {
-  background-color: rgba(248, 71, 100, 0.928);
-  border-bottom: 2px solid black;
+#collections, 
+#chains,
+#community{
+  width: 100%;
 }
 
-#board {}
+#collections label{
+background-color: rgba(248, 71, 100, 0.785);
+}
+#chains label{
+  background-color: rgba(234, 244, 45, 0.824);
+}
+#community label{
+  background-color: rgb(19, 82, 254);
+}
+
+aside li::before {
+  content: none;
+  display: none;
+  list-style-position: inside;
+
+}
+
+aside ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0;
+
+}
+
+.collapsible > input[id^="collapsible"]:checked ~ div.collapsible-body{
+  border: none;
+}
+
+aside li{
+  padding: 5px 0 5px 10px;
+  width: 100%;
+}
 
 #generator{
   background-color: rgb(32, 32, 32);
@@ -68,23 +107,30 @@ aside {
   padding: 5px;
 }
 
-#chains {
-  background-color: rgba(234, 244, 45, 0.824);
-  border-bottom: 2px solid black;
-
-}
-
-#community {
-  background-color: rgb(19, 82, 254);
-  border-bottom: 2px solid black;
-
-}
-
 #community label{
   color: white;
 }
 
+nav .collapsible label{
+  border: none;
+}
+
+#generator{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+background-color: rgb(248, 71, 100);
+color: white;
+font-size: 1.2rem;
+align-self: flex-start;
+}
+
+#generator h1{
+  font-size: 1rem;
+}
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Tables
 /*******************************************/
